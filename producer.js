@@ -8,9 +8,9 @@ async function init() {
     console.log('Connected producer!');
 
     await producer.send({
-        topic: 'rider-updates',
+        topic: 'rider-updates', //name of the topic defined in admin.js
         messages: [
-            { key: 'key1', value: 'hello world' },
+            { key: 'key1', value: 'hello world' },   //enter any key value pair 
             { key: 'key2', value: 'hey hey' }
         ],
     });
