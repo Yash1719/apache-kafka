@@ -15,7 +15,7 @@ async function init() {
                 {
                     topic: "rider-updates",
                     numPartitions: 2,
-                    replicationFactor: 1, 
+                    replicationFactor: 2, 
                 },
             ],
         });
