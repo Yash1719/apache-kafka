@@ -1,0 +1,17 @@
+admin: - infra setup topic,partition decide ..
+client:- setting up the code for apache
+producer: msg produce
+consumers:- cosume message we can also create group of consumer 
+
+Step 1
+first run zookeeper in terminal using docker 
+    docker run -p 2181:2181 zookeeper
+Step 2
+then run apache in terminal 
+    docker run -p 9092:9092 -e KAFKA_ZOOKEEPER_CONNECT=192.168.45.137:2181 -e KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://192.168.45.137:9092 -e KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1 confluentinc/cp-kafka
+Step 3
+Have nodejs,docker installed in system
+    npm init
+    npm i kafkajs
+have all the admin.js,client.js,producer.js,consumer.js 
+open two terminal once run the admin then topic partition all things will be created and then run producer and consumer simultaneously..
