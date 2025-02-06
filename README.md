@@ -73,8 +73,8 @@ In another terminal window, run the consumer.js script to consume messages from 
 node consumer.js
 ```
 #### Conclusion
-1.Admin sets up Kafka topics and partitions.
-2.Producer sends messages to Kafka topics.
-3.Consumer consumes the messages, and multiple consumers can be grouped to scale message consumption.
-4.This setup allows you to easily build and test a Kafka-based Publisher-Subscriber model using Docker and Node.js. Feel free to customize the scripts as needed!
+1.Admin sets up Kafka topics and partitions. \
+2.Producer sends messages to Kafka topics. \
+3.Consumer consumes the messages, and multiple consumers can be grouped to scale message consumption. \
+4.This setup allows you to easily build and test a Kafka-based Publisher-Subscriber model using Docker and Node.js. Feel free to customize the scripts as needed! 
 
